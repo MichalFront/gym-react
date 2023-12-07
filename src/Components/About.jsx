@@ -9,7 +9,7 @@ function About(){
             </div>
             <div className="about-text">
                 <h1>Learn more about us</h1>
-                <p>Lorem ipsum dolor sit, amet conse</p>
+                <p>Start training today</p>
                 <button>Read more</button>
             </div>
         </div>
