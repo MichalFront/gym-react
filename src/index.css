@@ -5,6 +5,7 @@ body {
   padding: 0px;
   background-color: #000000;
   font-family: "Lato", sans-serif;
+  /* background-color: #fff; */
 }
 * {
   box-sizing: border-box;
@@ -28,12 +29,13 @@ input {
 }
 #main {
   width: 100%;
-  /* height: 768px; */
   height: 100vh;
+  /* height: 768px; */
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("./images/banner.png");
+  /* background-image: url("./images/banner.png"); */
+  background-image: url("./images/boxer.jpg");
   position: relative;
   z-index: 0;
 }
@@ -41,6 +43,23 @@ input {
   position: absolute;
   content: "";
   background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(13, 171, 179, 0.38) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(8, 141, 181, 0.38) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(8, 144, 181, 0.38) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  /* background: -moz-radial-gradient(
     center,
     ellipse cover,
     rgba(181, 8, 8, 0.38) 0%,
@@ -56,12 +75,13 @@ input {
     ellipse at center,
     rgba(181, 8, 8, 0.38) 0%,
     rgba(0, 0, 0, 0.6) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61b50808', endColorstr='#99000000',GradientType=1 );
+  ); */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61b50808', endColorstr='#99000000',GradientType=1 ); */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61b50808', endColorstr='#99000000',GradientType=1 ); */
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: -1;
 }
 nav {
@@ -84,15 +104,18 @@ nav ul {
   display: flex;
 }
 .active {
-  background-color: #ff1414;
+  /* background-color: #ff1414; */
+  background-color: #0fc0df;
   color: #ffffff;
-  box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+  /* box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411); */
+  box-shadow: 5px 10px 30px rgba(64, 144, 198, 0.411);
   transition: all ease 0.2s;
 }
 .active:hover {
   background-color: #000000;
   color: #ffffff;
-  box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+  /* box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411); */
+  box-shadow: 5px 10px 30px rgba(64, 144, 198, 0.411);
   transition: all ease 0.2s;
 }
 nav ul li a {
@@ -111,9 +134,9 @@ nav ul li a {
   transition: 0.2s ease-in-out;
 }
 nav ul li a:hover {
-  background-color: #ff1414;
-  color: #ffffff;
-  box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+  background-color: #0fc0df;
+  color: #000000;
+  box-shadow: 5px 10px 30px rgba(2, 188, 255, 0.336);
   transition: all ease 0.2s;
 }
 nav .menu-btn,
@@ -121,16 +144,18 @@ nav .menu-btn,
   display: none;
 }
 .name {
+  /* background-color: #f70000; */
   text-align: center;
   font-family: "Montserrat";
-  width: 900px;
+  width: 100vw;
   position: absolute;
   left: 50%;
   top: 55%;
   transform: translate(-50%, -55%);
 }
 .name span {
-  color: #ff1414;
+  /* color: #ff1414; */
+  color: #0fc0df;
 }
 .name .details {
   font-size: 23px;
@@ -152,8 +177,9 @@ nav .menu-btn,
 }
 .header-btns {
   display: flex;
-  margin-top: 40px;
-  margin-left: 40%;
+  /* margin-top: 40px; */
+  /* margin-left: 50%; */
+  justify-content: center;
 }
 .header-btn {
   width: 160px;
@@ -162,8 +188,9 @@ nav .menu-btn,
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
-  background-color: #ff1414;
-  box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+  /* background-color: #ff1414; */
+  background-color: #0fc0df;
+  box-shadow: 5px 10px 30px rgba(2, 183, 255, 0.336);
   border-radius: 5px;
   color: #ffffff;
 }
@@ -171,12 +198,13 @@ nav .menu-btn,
   background-color: transparent;
   transition: all ease 0.5s;
   color: #ffffff;
-  border: 2px solid #ff1414;
+  /* border: 2px solid #ff1414; */
+  border: 2px solid #0fc0df;
 }
 
 #features {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   box-sizing: border-box;
   font-family: "Lato";
   display: flex;
@@ -216,8 +244,9 @@ nav .menu-btn,
   height: 50%;
 }
 .a-box:hover {
-  border: 1px solid #ff1414;
-  box-shadow: 2px 2px 12px rgba(184, 0, 0, 0.445);
+  /* border: 1px solid #ff1414; */
+  border: 1px solid #0fc0df;
+  box-shadow: 2px 2px 12px rgba(0, 138, 184, 0.445);
 }
 .a-b-text {
   width: 100%;
@@ -254,27 +283,30 @@ nav .menu-btn,
   margin-top: 15px;
 }
 #presentaion {
-  padding-top: 30px;
+  /* padding-top: 30px; */
   width: 100%;
-  height: 768px;
+  height: 100vh;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(images/offer.png);
+  /* background-image: url("./images/offer.png"); */
+  background-image: url("./images/twotwo.jpg");
   text-align: center;
 }
 
 .pr-heading {
+  /* background-color: #cecece; */
   text-align: center;
   font-family: "Lato";
-  width: 600px;
+  width: 99vw;
   position: absolute;
   left: 50%;
   top: 55%;
   transform: translate(-50%, -55%);
 }
 .pr-heading span {
-  color: #ff1414;
+  /* color: #ff1414; */
+  color: #0fc0df;
 }
 .pr-heading .details {
   font-size: 23px;
@@ -293,7 +325,8 @@ nav .menu-btn,
 .pr-btns {
   display: flex;
   margin-top: 40px;
-  margin-left: 35%;
+  /* margin-left: 35%; */
+  justify-content: center;
 }
 .pr-btn {
   width: 160px;
@@ -302,8 +335,9 @@ nav .menu-btn,
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
-  background-color: #ff1414;
-  box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+  /* background-color: #ff1414; */
+  background-color: #0fc0df;
+  box-shadow: 5px 10px 30px rgba(2, 158, 255, 0.336);
   border-radius: 5px;
   color: #ffffff;
 }
@@ -311,13 +345,14 @@ nav .menu-btn,
   background-color: transparent;
   transition: all ease 0.5s;
   color: #ffffff;
-  border: 2px solid #ff1414;
+  /* border: 2px solid #ff1414; */
+  border: 2px solid #0fc0df;
 }
 
 #about {
   margin-top: 100px;
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -333,7 +368,8 @@ nav .menu-btn,
 }
 .about-text h1 {
   font-size: 3rem;
-  color: #ff1414;
+  /* color: #ff1414; */
+  color: #0fc0df;
   font-weight: 500;
   margin: 0px;
   padding: 0px;
@@ -351,10 +387,11 @@ nav .menu-btn,
   border: none;
   outline: none;
   color: #ffffff;
-  background-color: #ff1414;
+  /* background-color: #ff1414; */
+  background-color: #0fc0df;
 }
 .about-text button:hover {
-  box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+  box-shadow: 5px 10px 30px rgba(2, 179, 255, 0.336);
   background-color: rgb(0, 0, 0);
   transition: all ease 0.3s;
   color: #ffffff;
@@ -368,6 +405,7 @@ nav .menu-btn,
 
 #contact {
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,7 +440,8 @@ nav .menu-btn,
 }
 #contact form input[type="submit"] {
   height: 45px;
-  background: linear-gradient(90deg, #ff1414 20%, #f70000);
+  /* background: linear-gradient(90deg, #ff1414 20%, #f70000); */
+  background: linear-gradient(90deg, #0fc0df 20%, #0fc0df);
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -413,9 +452,9 @@ nav .menu-btn,
 }
 
 @media (max-width: 1190px) {
-  #main {
-    /* background-size: 1150px !important; */
-  }
+  /* #main {
+     background-size: 1150px !important;
+  } */
   .name {
     left: 50%;
     top: 50%;
@@ -464,6 +503,15 @@ nav .menu-btn,
 }
 
 @media (max-width: 970px) {
+  .name h2 {
+    font-size: 1rem;
+  }
+  .name h1 {
+    font-size: 2rem;
+  }
+  .name .details {
+    font-size: 0.7rem;
+  }
   /* #main {
     height: 650px;
   } */
@@ -484,10 +532,10 @@ nav .menu-btn,
     margin-left: 20%;
     margin-top: 20px;
   } */
-  .pr-btn {
+  /* .pr-btn {
     margin-left: 20%;
     margin-top: 20px;
-  }
+  } */
   #about {
     justify-content: center;
     padding-top: 0px;
@@ -512,8 +560,14 @@ nav .menu-btn,
   /* .name {
     width: 60%;
   } */
-  .pr-heading {
+  /* .pr-heading {
     width: 60%;
+  } */
+  .pr-heading h1 {
+    font-size: 1rem;
+  }
+  .pr-heading .details {
+    font-size: 1rem;
   }
 }
 
@@ -532,16 +586,17 @@ nav .menu-btn,
   /* .header-btns {
     margin: 0;
   } */
-  .pr-btns {
+  /* .pr-btns {
     margin: 0;
-  }
+  } */
   .menu {
     display: none;
     position: absolute;
     top: 65px;
     left: 0px;
     background-color: #000000;
-    border-bottom: 4px solid #ff1414;
+    /* border-bottom: 4px solid #ff1414; */
+    border-bottom: 4px solid #0fc0df;
     width: 100%;
     padding: 0px;
     margin: 0px;
